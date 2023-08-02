@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fav.css">
+    <title>CV</title>
+</head>
+<body>
+    <div class="container">
+        <div class="avatar">
+            <img src="yasuo.jpg" alt="Lương Ngọc Thiện">
+        </div>
+        <div class="name">
+            <h1>Luong Ngoc Thien</h1>
+            <div class="specialize">
+                <h3>Developer</h3>
+            </div>
+            <ul class="contact">
+                
+                <li>
+                    <span>P</span> 0123 456 789
+                </li>
+                <li>
+                    <span>E</span> luongthien03@gmail.com
+                </li>
+                <li>
+                    <span>F</span>
+                    <a href="https://www.facebook.com/thien.luong.18007218/">Facebook/Shiro Nhạt</a>
+                    <div id="clock"></div>
+                        <script>
+                            // Hàm để cập nhật thời gian và hiển thị lên trang CV
+                            function updateTime() {
+                            const clockDiv = document.getElementById('clock');
+                            const now = new Date();
+                            const hours = String(now.getHours()).padStart(2, '0');
+                            const minutes = String(now.getMinutes()).padStart(2, '0');
+                            const seconds = String(now.getSeconds()).padStart(2, '0');
+                            const timeString = `${hours}:${minutes}:${seconds}`;
+                            clockDiv.textContent = `Current time: ${timeString}`;
+                            }
+                        
+                            // Gọi hàm updateTime lần đầu và sau mỗi 1 giây
+                            updateTime();
+                            setInterval(updateTime, 1000);
+                        </script>
+                </li>
+            </ul>
+        </div>
+        <div class="info">
+            <ul>
+                <li>
+                    FROM <b>DALAT</b> - VIETNAM
+                </li>
+                <li>
+                    09/09/0901
+                </li>
+                <li>
+                    XY University
+                </li>
+            </ul>
+        </div>
+        <div class="intro">
+            <h2>INTRO</h2>
+            I am an industrious person with a willingness to learn new things and a desire to contribute my best to the work.
+        </div>
+        <div class="exp">
+            <h2>EXPERIENCE</h2>
+            <div class="item">
+                <h4>Intern</h4>
+                <div class="time">
+                    <span>2021 - 2022</span><br>
+                    <span>XY Company</span>
+                </div>
+            </div>
+            <div class="item">
+                <h4>Student</h4>
+                <div class="time">
+                    <span>2015 - 2020</span><br>
+                    <span>XY University</span>
+                </div>  
+            </div>
+            <h2 class="skill">SKILLS</h2>
+                <li>Problem Solving</li>
+                <li>Comunication</li>
+                <li>C++</li>
+                <li>Java</li>
+                <li>CSS</li>
+                <li>HTML</li>
+        </div>
+
+        
+        <div class="project">
+            <h2>PROJECT</h2>
+            <div class="item">
+                <h4>Develope Shopping App</h4>
+                <div class="time">
+                    2020
+                </div>
+            </div>
+            <div class="item">
+                <h4>Web Shopping</h4>
+                <div class="time">
+                    2020
+                </div>
+            </div>
+            <div class="item">
+                <h4>Test Security System</h4>
+                <div class="time">
+                    2020
+                </div>
+            </div>
+            <div class="item">
+                <h4>Join School Project</h4>
+                <div class="time">
+                    2020
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

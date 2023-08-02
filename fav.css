@@ -1,0 +1,138 @@
+body{
+  background-color: #b26c6c;
+  font-family: system-ui;
+  color: #fff;
+}
+.container{
+  background-image: url(lo.jpg);
+  background-size: cover;
+  width: 800px;
+  max-width: 100%;
+  margin: auto;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 20% 75%;
+  column-gap: 5%;
+  row-gap: 10px;
+}
+
+.avatar img{
+  width: 150px;
+  height: 175px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 5px solid #fff;
+  box-shadow: purple 0px 2px 8px 0px;
+}
+
+.avatar{
+  display: flex;
+  justify-content: end;
+}
+
+.name{
+  padding-left: 30px;
+  border-left: 1px solid #000;
+}
+
+.name h1{
+  font-weight: bold;
+  font-size: xx-large;
+  margin: 0 0 5px;
+}
+
+.name .specialize{
+  margin: 0;
+  letter-spacing: 3px;
+}
+
+.info{
+  text-align: center;
+}
+
+.name .contact{
+  padding:0;
+  list-style: none;
+}
+
+.name .contact span{
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: small;
+  margin-right: 5px;
+}
+
+.name .contact li{
+  padding: 10px 0;
+  transform: translate(-40px);
+}
+
+.name .contact li a:visited{
+  color: rgb(89, 89, 235);
+}
+
+#clock{
+  color: #fff;
+  font-style: italic;
+  text-align: end;
+}
+
+.info ul{
+  padding:0;
+  margin: 0;
+  list-style: none;
+  text-align: right;
+  line-height: 30px;
+}
+
+.intro{
+  padding-left: 30px;
+  border-left: 1px solid #000;
+  text-align: justify;
+}
+
+.intro h2{
+  color: #2182cd;
+  border-bottom: 3px solid #2182cd;
+}
+
+h2{
+  padding-top: 40px;
+  margin: 0 0 20px;
+}
+
+.exp h2{
+  border-bottom: 3px solid #2182cd;
+  color: #2182cd;
+}
+
+.exp h4{
+  margin: 20px 0 10px;
+}
+
+.skills{
+  margin-top: 50px;
+}
+
+.exp ul{
+  padding:0;
+  margin:0;
+  list-style: none;
+  line-height: 30px;
+}
+
+.project{
+  padding-left: 30px;
+  text-align: justify;
+  border-left: 1px solid #000;
+}
+
+.project h2{
+  color: #2182cd;
+  border-bottom: 3px solid #2182cd;
+}
